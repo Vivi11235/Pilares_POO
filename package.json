@@ -1,0 +1,17 @@
+{
+  "name": "pilares_poo",
+  "version": "1.0.0",
+  "description": "Pilares programacao orientada a objetos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node ./dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
