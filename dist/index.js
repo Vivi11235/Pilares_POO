@@ -1,5 +1,45 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const atividade1_1 = require("./atividade1");
-const ingressoNormal = new atividade1_1.Normal(50);
+const normal_1 = require("./Atividade1/normal");
+const vip_1 = require("./Atividade1/vip");
+const camarote_1 = require("./Atividade1/camarote");
+const novo_1 = require("./Atividade2/novo");
+const velho_1 = require("./Atividade2/velho");
+const cachorro_1 = require("./Atividade3/cachorro");
+const gato_1 = require("./Atividade3/gato");
+const cavalo_1 = require("./Atividade3/cavalo");
+//Atividade 1
+const ingressoNormal = new normal_1.Normal(100, 2);
 ingressoNormal.imprimeValor();
+const ingressoVip = new vip_1.Vip(100, 3, 50);
+ingressoVip.imprimeValor();
+const ingressoCamarote = new camarote_1.Camarote(100, 4, 100);
+ingressoCamarote.imprimeValor();
+//Atividade 2
+const imovelNovo = new novo_1.Novo('Rua 7 de Setembro', 500000, 100000);
+imovelNovo.imprimeValor();
+const adicionalNovo = imovelNovo.adicional;
+console.log(adicionalNovo);
+const imovelVelho = new velho_1.Velho('Rua 20 de Setembro', 500000, 50000);
+imovelVelho.imprimeValor();
+const descontoVelho = imovelVelho.desconto;
+console.log(descontoVelho);
+//Atividade 3
+const gato = new gato_1.Gato('Félix', 20);
+console.log(gato.getNome);
+console.log(gato.getIdade);
+gato.caminhar(20);
+gato.miar();
+gato.morder();
+const cachorro = new cachorro_1.Cachorro('Ônix', 15);
+console.log(cachorro.getNome);
+console.log(cachorro.getIdade);
+cachorro.caminhar(30);
+cachorro.latir();
+const cavalo = new cavalo_1.Cavalo('Spirit', 10);
+console.log(cavalo.getNome);
+console.log(cavalo.getIdade);
+cavalo.caminhar(50);
+cavalo.coicear();
+cavalo.morder();
+cavalo.relinchar();
